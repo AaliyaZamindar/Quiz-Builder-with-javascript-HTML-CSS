@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ONLINE QUIZ</title>
+    <style>
+        .hiddenClass{
+            display: none;
+        }
+        .showClass{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <h1 id="welcome">WECOME TO THE QUIZ!</h1><br><br>
+        <button onclick="removeFunction(event)" id="startquiz">START QUIZ</button>
+    </div>
+    
+    <div id="question1" class="hiddenClass">
+    <p>Which type of javascript language is?</p>
+    <form id="Question1Form" onsubmit="submitAnswer1Function(event)">
+        <input type="radio" name="answer1" class="answer"  value="object oriented">object oriented<br>
+        <input type="radio" name="answer1"  value="object based">object based<br>
+        <input type="radio" name="answer1"  value="assembly language">assembly language<br>
+        <input type="radio" name="answer1"  value="high level">high level<br>
+        <input type="submit" id="submit" value="Submit"/>
+    </form>
+    
+    
+    </div>  
+    
+    <div id="question2" class="hiddenClass"> 
+    <p>The function and var are known as ?</p>
+    <form id="Question2Form" onsubmit="submitAnswer2Function(event)">
+    <input type="radio"  name="answer2" value="keywords">keywords<br>
+    <input type="radio"  name="answer2" value="data types">data types<br>
+    <input type="radio"  name="answer2" value="declaration statements">declaration statements<br>
+    <input type="radio"  name="answer2" value="prototypes">prototypes<br>
+    <input type="submit" id="submit" value="Submit"/>
+    </form>
+    
+    </div > 
+
+    <div id="question3" class="hiddenClass">
+    <p>In JavaScript, what is a block of statement?</p>
+    <form id="Question3Form" onsubmit="submitAnswer3Function(event)">
+    <input type="radio"  name="answer3" value="Conditional block">Conditional block<br>
+    <input type="radio"  name="answer3" value=" block that combines a number of statements into a single compound statement"> block that combines a number of statements into a single compound statement<br>
+    <input type="radio"  name="answer3" value="both conditional block and a single statement">both conditional block and a single statement<br>
+    <input type="radio"  name="answer3" value="block that contains a single statement"> block that contains a single statement<br>
+    <input type="submit" id="submit" value="Submit"/>
+    </form>
+    </div>
+
+    <div id="question4" class="hiddenClass">
+    <form id="Question3Form" onsubmit="submitAnswer4Function(event)">
+    <p>When interpreter encounters an empty statements, what it will do: ?</p>
+    <input type="radio"  name="answer4" value="Shows a warning">Shows a warning<br>
+    <input type="radio"  name="answer4" value="Prompts to complete the statement">Prompts to complete the statement<br>
+    <input type="radio"  name="answer4" value="Throws an error">Throws an error<br>
+    <input type="radio"  name="answer4" value="Ignores the statements"> Ignores the statements<br>
+    <input type="submit" id="submit" value="Submit"/><br><br>
+    
+    </form>
+    </div>
+    <div id="result" class="hiddenClass">
+    <button onclick="scoreFunction(event)" id="scorebutton">SCORE </button>
+    </div>
+
+</body>
+<script src="quiz.js"></script>
+</html>
+
+    
